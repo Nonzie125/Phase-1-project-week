@@ -32,6 +32,7 @@ function removeFromCart(cartItemId) {
 }
 
 //We try fetching memes
+document.addEventListener("DOMContentLoaded",() => {
 function fetchmemes() {}
     fetch(`https://api.imgflip.com/get_memes`)
      console.log(fetch(`https://api.imgflip.com/get_memes`))
@@ -40,6 +41,7 @@ function fetchmemes() {}
         console.log(data);
         fetchmemes(data);
       })
+    })
       .catch(error => console.error('Error fetching memes:', error));
 //create an array of fetched memes images
       let memes =["https:\/\/i.imgflip.com\/30b1gx.jpg","https:\/\/i.imgflip.com\/1g8my4.jpg","https:\/\/i.imgflip.com\/1ur9b0.jpg"]
@@ -48,4 +50,10 @@ function fetchmemes() {}
     img.src = "https:\/\/i.imgflip.com\/1g8my4.jpg"
     style="width:100px;height:120px"
  }
- memesFun("https://api.imgflip.com/get_memes")
+ memesFun("https://api.imgflip.com/get_memes");
+
+ let toPay = document.createElement('div');
+ toPay.classList.add('amount');
+ toPay.id = 'amount-' + amount; 
+ toPay.innerText = itemTitle;
+ 

@@ -7,6 +7,7 @@ body {
 }
 
 header {
+    background-image: url('https://img.freepik.com/premium-photo/computer-shop-service-work-desk-with-pc-components-copy-space-middle_176814-589.jpg?w=740');
     background-color: #6a8d6a;
     color: white;
     text-align: center;
@@ -116,4 +117,15 @@ button:hover {
     font-size: 3.5em;
     box-shadow: border;
 }
-
+/* Location Styles */
+.location {
+    background-color: rgb(175, 211, 128);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 1rem auto;
+    padding: 1rem;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+}

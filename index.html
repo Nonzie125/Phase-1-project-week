@@ -17,6 +17,9 @@
                 <ul>email: bandgcyber@gmail.com</ul>
                 <ul>contact : 0727207156</ul>
                 </h2>
+        <h3 id="ABOUT US">ABOUT US
+            <p>We are an enterprise that specializes mostly in selling of both computer and phone accessories.We are committed t proviidng quality products to our clients In adtton we also do deliver items to our clients all over the country</p>
+        </h3>
             
     </header>
     
@@ -59,7 +62,7 @@
             <hr>
             <label for="laptop make">laptop model</label>
             <select id="model" name="model">
-                <option value="hp">hp/option>
+                <option value="hp">hp</option>
                 <option value="lenovo">lenovo</option>
                 <option value="dell">dell</option>
                 <option value="asus">asus</option>
@@ -124,9 +127,21 @@
                     </select>
         <button onclick="addToCart('item10')">Add to Cart</button>
     </div>
-
+    <div class="card" id="item3">
+        <img src="https://images.tokopedia.net/img/cache/900/VqbcmM/2022/3/25/ad7f3ad5-8a0a-48be-9752-c0c9415e7ee4.jpg">
+        <div class="title">CHARGING CABLES</div>
+        <p class="Price">price : ksh 500</p>
+        <hr>
+        <label for="make">size</label>
+        <select id="model" name="model">
+            <option value="Type c">typ c</option>
+            <option value="Normal">normal</option>
+            <option value="I phone">i phone</option>
+        </select>
+        <button onclick="addToCart('item3')">Add to Cart</button>
     </div>
-
+    </div>
+<!--We open a lass to show another sector of what is offered-->
           <div class="Services" id="Services offered">
             <div class="title">Online services</div>
             <hr/>
@@ -134,7 +149,7 @@
                 <div class="card" id="item11">
                     <img src="https://www.ntsa.go.ke/images/ntsa_icon.png">
                     <div class="title">NTSA Services labor charge </div>
-                    <p class="NTSA">price : ksh 700</p>
+                    <p class="price">price : ksh 700</p>
                     <hr>
                     <label for="service">services offered</label>
                     <select id="ntsa service" name="select-service">
@@ -151,7 +166,7 @@
                 <div class="card" id="item12">
                     <img src="https://play-lh.googleusercontent.com/dMpjE7NCEG0OUEwkqtBF0pmq_hREifWwm1rF_AyLOBOUP3voC5zssBUfLTB0wzY5Hr4=w240-h480-rw">
                     <div class="title">ECITIZEN SERVICES </div>
-                    <p class="ECITIZEN">price : ksh 400</p>
+                    <p class="price">price : ksh 400</p>
                     <hr>
                     <label for="service">services offered</label>
                     <select id="ecitizen service" name="select-service">
@@ -195,7 +210,7 @@
                     <div class="card" id="ksh 500">
                 <img src="https://all.co.ke/wp-content/uploads/2024/06/tsc.jpg">
                     <div class="title">TEACHERS SERVICE COMMISSION SERVICES </div>
-                    <p class="TSC">price : ksh 500</p>
+                    <p class="price">price : ksh 500</p>
                     <button onclick="addToCart('item15')">Add to Cart</button>
                 </div>
                 </div>
@@ -213,25 +228,30 @@
                       </div>
                     </div>
                 <!-- am using an example in cart -->
+                 <div id="toPay">
+                    <div class="amount"   id="amount"
+                div class="title">TOTAL</div>
+            <hr/>
+            </div>
                     <button onclick="toPay('')">toPay</button>
                 </div>
                 </div>
-
+                <div id="memes">
+                    <img
+                    src ="https://api.imgflip.com/get_memes" id="memesFun"
+                    style="width:150px;height:150px">
+                    <button onclick="memesFun()">click to get meme</button>
+                </div>
 <div class="container 2">           
 <div class="location" id="our location">
-<div class="title">location</div>
+<div class="title">Location</div>
 <p>We are located along Eastern Bypass Highway Kamakis  directly next to KFC Kamakis</p>
 <hr/>            
       </div>
   </div>
 </div>
 <!-- incorporated the fetched memes here-->
-    <div id="memes">
-        <img
-        src ="https://api.imgflip.com/get_memes" id="memesFun"
-        style="width:150px;height:150px">
-        <button onclick="memesFun()">click to get meme</button>
-    </div>
+   
     <script>
         document.getElementById("h1").style.color = "white";
         document.getElementById("h1").style.fontFamily = "Verdana";
